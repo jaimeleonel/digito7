@@ -1,0 +1,281 @@
+:root {
+    --cor-de-fundo: #222222;
+    --cor-de-fundo-link: #181818;
+    --cor-do-texto-link: #ffffff;
+    --filtro-interruptor: grayscale(1) opacity(0.25);
+    /*--jpg-do-background: url("tela-azul.jpg");*/
+}
+
+.tema-claro{
+    --cor-de-fundo: #d3570f;
+    --cor-de-fundo-link: #fff;
+    --cor-do-texto-link: #5b49e8;
+    --filtro-interruptor: grayscale(0) opacity(1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    background: var(--cor-de-fundo);
+    -webkit-font-smoothing: antialiased;
+}
+
+.secao-principal{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Itens do Topo */
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo__interruptor {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    border-radius: 100%;
+    border: none;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+
+    filter: var(--filtro-interruptor);
+    cursor: pointer;
+}
+
+.topo__foto-perfil {
+    margin-top: 20%;
+    width: 100px;
+    border: 4px solid #ffffff;
+    border-radius: 100%;
+
+    box-shadow: 0 2px 10px #000000;
+}
+
+.topo__nome {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.topo__profissao {
+    margin-top: 4px;
+    color: #fff;
+}
+
+/* Links */
+.links  {
+    margin: 30px 30px 0 30px;
+}
+
+.links__link {
+    position: relative;
+    display: flex;
+    background: var(--cor-de-fundo-link);
+
+    margin-bottom: 15px;
+    height: 52px;
+    box-shadow: 0 3px 3px #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-weight: 700;
+    color: var(--cor-do-texto-link);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links__icone {
+    position: absolute;
+    left: 19px;
+    font-size: 25px;
+}
+
+.links__link:hover {
+    filter: brightness(0.75);
+}
+
+/* Rodape footer*/
+
+.rodape {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.rodape__convite {
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.rodape__icone {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+/* AREA DE TELA DE LOGIN*/
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Barlow", sans-serif;
+}
+
+.tela {
+    /*background-color: rgba(19, 19, 19, 0.3);*/
+    background-image: linear-gradient(45deg, rgba(238, 105, 28, 0.467),rgba(212, 243, 35, 0.467));
+    padding: 40px;
+    border-radius: 2px;
+    width:280px;
+}
+
+.tela-login {
+    padding-bottom: 40px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.tela-area::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -0px;
+    margin-left: -0px;
+}
+
+.tela-login-area label{
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.tela-login-area {
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+}
+
+.tela-login-area input {
+    margin-top: 10px;
+    padding:0 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+
+.login-butao {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-butao .submit {
+    width: 100%;
+    height: 50px;
+    background-color: #db7210;
+    border:none;
+    color:#e1e1e1;
+    margin: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-butao a {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.voltar-home a {
+    padding: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/*Pagina Produto e Serviços*/
+a:hover {
+    opacity: 0.8;
+    
+}
+
+.prodservice {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    /*text-decoration-color: #fff;*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    background: #23232e;
+    height: 10vh;
+    color: #fff;
+    text-decoration: solid;
+    
+}
+
+main {
+    background: url("tela-azul.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.lista-de-navegacao {
+    list-style: none;
+    display: flex;
+}
+
+.lista-de-navegacao li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu div {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 8px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+    .lista-de-navegacao {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+    }
+}
