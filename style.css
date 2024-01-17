@@ -54,7 +54,7 @@ body {
 }
 
 .topo__foto-perfil {
-    margin-top: 20%;
+    margin-top: 15%;
     width: 100px;
     border: 4px solid #ffffff;
     border-radius: 100%;
@@ -133,22 +133,27 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: "Barlow", sans-serif;
-}
 
 .tela {
     /*background-color: rgba(19, 19, 19, 0.3);*/
     background-image: linear-gradient(45deg, rgba(238, 105, 28, 0.467),rgba(212, 243, 35, 0.467));
-    padding: 40px;
+    padding: 30px;
     border-radius: 2px;
-    width:280px;
+    width:240px;
 }
 
 .tela-login {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     opacity: 0.8;
     color: #fff;
 }
 
+}
+h2{
+    text-align: center;
+    padding-top: 10% 0;
+    font-size: 30px;
+}
 .tela-area::after {
     content: "";
     width: 70px;
@@ -161,8 +166,9 @@ body {
 
 .tela-login-area label{
     color: #fff;
-    font-size: 20px;
+    font-size: 60px;
     opacity: 0.8;
+    
 }
 
 .tela-login-area {
@@ -173,12 +179,13 @@ body {
 
 .tela-login-area input {
     margin-top: 10px;
-    padding:0 10px;
+    padding: 10px;
     background-color: transparent;
     border:none;
     border-bottom: 2px solid #e1e1e1;
     outline: none;
     color: #fff;
+    border-radius: 60px;
 }
 
 .login-butao {
@@ -217,7 +224,7 @@ body {
 
 /*Pagina Produto e Serviços*/
 a:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     
 }
 
@@ -225,7 +232,7 @@ a:hover {
     font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
+    color: #65c452;
     /*text-decoration-color: #fff;*/
 }
 
@@ -234,9 +241,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: "Barlow", sans-serif;
-    background: #23232e;
+    background: #f6f6f8;
     height: 10vh;
-    color: #fff;
+    color: #f8faf8;
     text-decoration: solid;
     
 }
@@ -260,7 +267,7 @@ main {
 .mobile-menu div {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #60e67d;
     margin: 8px;
 }
 
@@ -276,6 +283,6 @@ main {
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #23232e;
+        background: #67e29f;
     }
 }
